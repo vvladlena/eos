@@ -1,0 +1,45 @@
+/* Regular */
+@font-face {
+	font-family: 'Mazzard H';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Mazzard H'),
+		url('../fonts/MazzardH-Regular.woff2') format('woff2'), 
+		url('../fonts/MazzardH-Regular.woff') format('woff'),
+		url('../fonts/MazzardH-Regular.ttf') format('ttf'),
+}
+
+
+/* Medium */
+@font-face {
+    font-family: 'Mazzard H';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Mazzard H'),
+		url('../fonts/MazzardH-Medium.woff2') format('woff2'), 
+		url('../fonts/MazzardH-Medium.woff') format('woff'),
+		url('../fonts/MazzardH-Medium.ttf') format('ttf'),
+}
+/* SemiBold */
+@font-face {
+    font-family: 'Mazzard H';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Mazzard H'),
+		url('../fonts/MazzardH-SemiBold.woff2') format('woff2'), 
+		url('../fonts/MazzardH-SemiBold.woff') format('woff'),
+		url('../fonts/MazzardH-SemiBold.ttf') format('ttf'),
+}
+ 
+
+/* Bold */
+@font-face {
+	font-family: 'Mazzard H';
+	font-style: normal;
+	font-weight: bold;
+    src: local('Mazzard H'),
+    url('../fonts/MazzardH-Bold.woff2') format('woff2'), 
+    url('../fonts/MazzardH-Bold.woff') format('woff'),
+    url('../fonts/MazzardH-Bold.ttf') format('ttf'),
+}
+ 

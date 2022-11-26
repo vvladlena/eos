@@ -1,0 +1,119 @@
+.animated-object {
+    opacity: 0;
+}
+
+.animation {
+
+    .intro__inner {
+        animation: toTop 2s ease 1 forwards;
+    }
+
+    .service {
+        animation: toTop 2s ease 1 forwards;
+
+
+        &--second {
+            animation-delay: 250ms;
+        }
+
+        &--third {
+            animation-delay: 500ms;
+        }
+    }
+
+    .rating__left {
+        animation: toRight 2s ease 1 forwards;
+    }
+
+    .rating__counter {
+        animation: toLeft 2s ease 1 forwards;
+    }
+
+    .employers__title-name {
+        animation: toRight 2s ease 1 forwards;
+    }
+
+    .employers__title-description {
+        animation: toLeft 2s ease 1 forwards;
+    }
+
+    .employers__item {
+        animation: toTop 2s 500ms ease 1 forwards;
+
+        &--second {
+            animation-delay: 1s;
+        }
+    }
+
+    .advantages__title {
+        animation: toTop 2s ease 1 forwards;
+    }
+
+    .advantage {
+        animation: toTop 2s 1s ease 1 forwards;
+
+        &--second {
+            animation-delay: 1.25s;
+        }
+    }
+
+    .advantages__question {
+        animation: toLeft 2s 1s ease 1 forwards;
+    }
+
+    .form__title {
+        animation: toTop 2s ease 1 forwards;
+    }
+
+    .form__content {
+        animation: toTop 2s 750ms ease 1 forwards;
+    }
+
+    .form__inner {
+        animation: toTop 2s 1s ease 1 forwards;
+    }
+  
+}
+
+
+
+
+
+
+
+
+@keyframes toTop {
+    0% {
+        transform: translateY(250px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes toRight {
+    0% {
+        transform: translateX(-250px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes toLeft {
+    0% {
+        transform: translateX(250px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

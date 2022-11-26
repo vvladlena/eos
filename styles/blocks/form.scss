@@ -1,0 +1,76 @@
+.form-section {
+    position: relative;
+    background: $fontColor;
+    min-height: rem(1200px);
+    padding-top: rem(120px);
+    padding-bottom: rem(130px);
+}
+
+.form__content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__title {
+    color: #fff;
+    text-align: center;
+    max-width: rem(540px);
+}
+
+.form__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: rem(540px);
+    min-height: rem(770px);
+    background: #fff;
+    padding: rem(30px) rem(45px) rem(40px) rem(45px);
+
+    @include phones{
+        width: 95%;
+    }
+
+
+}
+
+.form__list {
+    width: 100%;
+
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    margin-bottom: rem(30px);
+
+
+
+}
+
+.form__input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(10, 4, 60, 0.15);
+    width: 100%;
+    height: rem(40px);
+    font-weight: bold;
+    font-size: rem(15px);
+    opacity: .5;
+    font-family: inherit;
+
+
+    &--texetarea {
+        height: rem(186px);
+        resize: vertical;
+    }
+}
+
+
+

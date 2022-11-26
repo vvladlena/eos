@@ -1,0 +1,46 @@
+$containerWidth: 1300px;
+$baseFontSize: 17px;
+
+$firstColor: #F5DF4D;
+$secondaryColor: #F5DF4D;
+
+$fontColor: #1D263A; 
+$fontColor2: #212529; 
+$fontColor3: #213053; 
+$buttonColor: #939597;
+
+
+$backgroundColor: #F4F0EC;
+
+$z-fixed-menu: 100%;
+
+$baseFontFamily:'Mazzard H', sans-serif;
+
+$tablets: 768px;
+$phones: 480px;
+
+
+@import "layout/fonts";
+@import "layout/normalize";
+@import "layout/media";
+@import "layout/base";
+@import "blocks/section";
+@import "blocks/intro";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/button";
+@import "blocks/animation-decor";
+@import "blocks/services";
+@import "blocks/rating";
+@import "blocks/employers";
+@import "blocks/advantages";
+@import "blocks/form";
+@import "blocks/footer";
+@import "blocks/animation-scroll";
+
+
+
+
+
+
+

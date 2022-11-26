@@ -1,0 +1,93 @@
+.rating__content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+    @include tablets {
+        flex-direction: column;
+    }
+}
+
+.rating__left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: $fontColor3;
+    width: 40%;
+
+    @include tablets {
+        width: 75%;
+        margin-bottom: 35px;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+
+.rating__description {
+    opacity: .7;
+    margin-bottom: rem(50px);
+    padding-right: 5px;
+}
+
+
+
+.rating__counter {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::after {
+        position: relative;
+        content: url('../images/background/counter-img.png');
+        z-index: -1;
+        left: -25%;
+
+        @include phones {
+            display: none;
+        }
+    }
+
+    @include tablets {
+        width: 75%;
+    }
+
+    @include phones {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+
+}
+
+.counter__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 58px;
+    min-height: rem(407px);
+    min-width: rem(405px);
+    background: $firstColor;
+    box-shadow: 0px 54px 100px -10px rgba(255, 121, 77, 0.3);
+}
+
+.counter__item {
+    color: #fff;
+}
+
+.counter__number {
+    font-size: rem(48px);
+    font-weight: bold;
+    margin-bottom: rem(18px);
+}
+
+.counter__description {
+    opacity: .7;
+    font-size: rem(21px);
+}

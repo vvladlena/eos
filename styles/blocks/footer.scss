@@ -1,0 +1,134 @@
+.footer {
+    background: #DAEAE4;
+    position: relative;
+}
+
+.footer__content {
+    width: 100%;
+    min-height: rem(518px);
+    display: flex;
+    padding: rem(100px) 0;
+    justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+    width: 350px;
+
+    @include tablets {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: rem(45px);
+    }
+}
+
+
+
+.footer__contact {
+    min-width: 60%;
+
+    @include tablets {
+        width: 100%;
+    }
+}
+
+
+.footer__logo {
+    margin-bottom: rem(25px);
+}
+
+.footer__text {
+    opacity: .8;
+
+    @include tablets {
+        width: 80%;
+    }
+}
+
+.footer__list {
+    display: flex;
+
+    @include tablets {
+        justify-content: center;
+    }
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: rem(15px);
+
+    &:last-child {
+        margin-right: 0;
+
+        @include phones {
+            margin-bottom: 0;
+
+        }
+    }
+
+    @include phones {
+        margin-bottom: 45px;
+        margin-right: 0;
+
+    }
+}
+
+.footer__item-name {
+    font-size: rem(15px);
+    margin-bottom: rem(43px);
+    font-weight: bold;
+    opacity: .6;
+
+    @include phones {
+        margin-bottom: 25px;
+    }
+}
+
+.footer__item-content {
+    font-weight: 600;
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+
+    &-instagram {
+        margin-right: 20px;
+    }
+}
+
+.footer__numbers {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem(20px);
+}
+
+.footer-phone--first {
+    margin-bottom: rem(15px);
+}
+
+.firm-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__firm-info {
+    margin-bottom: rem(15px);
+    word-wrap: none;
+}

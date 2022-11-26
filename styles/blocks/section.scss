@@ -1,0 +1,18 @@
+.section {
+    margin-bottom: rem(130px);
+
+    @include tablets{
+        margin-bottom: rem(100px);
+    }
+
+}
+
+.intro {
+    margin-bottom: 0;
+   
+
+}
+
+.form-section {
+    margin-bottom: 0;
+}

@@ -1,0 +1,174 @@
+.intro__content {
+    &::before {
+        position: absolute;
+        content: url('../images/decor/banner-shape-2.png');
+        top: 10%;
+        right: -7%;
+        animation: 1s infinite alternate topDecor;
+
+        @include phones {
+            display: none;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: url('../images/decor/banner-shape-1.png');
+        animation: 2s infinite alternate bottomDecor;
+        bottom: -10%;
+        left: 0;
+
+        @include tablets {
+            display: none;
+        }
+    }
+}
+
+
+#advantage-first {
+    &::before {
+        position: absolute;
+        content: url('../images/decor/coin-bg.png');
+        animation: 1s infinite alternate topDecor;
+        top: -25px;
+        left: -35px;
+    }
+}
+
+#advantage-second {
+    &::before {
+        position: absolute;
+        content: url('../images/decor/cycle-bg.png');
+        animation: 2s infinite alternate bottomDecor;
+        left: -20px;
+    }
+}
+
+.advantages__question {
+    &::after {
+        position: absolute;
+        content: url('../images/decor/chain-shape-1.png');
+        animation: 1.5s infinite alternate bottomDecor;
+        // left: -20px;
+        top: -25%;
+        right: -8%;
+
+        @include phones {
+            display: none;
+        }
+    }
+}
+
+.form__inner {
+    &::before {
+        position: absolute;
+        content: url('../images/decor/con-shape-3.png');
+        animation: 15s infinite linear rotate;
+        top: -60px;
+        right: -45px;
+
+        @include tablets {
+            display: none;
+        }
+
+    }
+
+    &::after {
+        position: absolute;
+        content: url('../images/decor/con-shape-2.png');
+        animation: 15s infinite linear rotate;
+        top: 25%;
+        left: -60px;
+
+        @include tablets {
+            display: none;
+        }
+    }
+}
+
+.form__content {
+    &::before {
+        position: absolute;
+        content: url('../images/decor/con-shape-1.png');
+        animation: 1s infinite alternate topDecor;
+        top: 0;
+        left: -6%;
+
+        @include tablets {
+            display: none;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: url('../images/decor/con-shape-5.png');
+        animation: 15s infinite linear rotate;
+        bottom: 10%;
+        right: 220px;
+
+        @include tablets {
+            display: none;
+        }
+
+    }
+}
+
+.form-section {
+    &::after {
+        position: absolute;
+        content: url('../images/decor/con-shape-4.png');
+        animation: 2s infinite alternate bottomDecor;
+        top: 55%;
+        right: -2%;
+
+        @include tablets {
+            display: none;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: url('../images/decor/con-shape-6.png');
+        animation: 1s infinite alternate topDecor;
+        bottom: 0;
+        left: 10%;
+
+        @include tablets {
+            display: none;
+        }
+    }
+}
+
+
+
+
+
+@keyframes topDecor {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes bottomDecor {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-15px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
